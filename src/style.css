@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(57, 57, 57);
+}
+
+.app{
+    width: 800px;
+    min-height: 900px;
+    background-color: #c9c9c9;
+    margin: 100px auto;
+}
+
+h1{
+    padding: 40px 0 40px 260px;
+    font-size: 40px;
+    color: rgb(194, 128, 37);
+}
+
+.tableLabel{
+    width: 700px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    border-bottom: 2px black solid;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.tableRow{
+    width: 700px;
+    padding: 10px 0;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(57, 57, 57);
+    border-bottom: 1px rgb(157, 157, 157) solid;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    padding: 8px 0 8px 30px;
+    margin: 0px 20px 30px 600px;
+    color: white;
+    background-color: rgb(57,57,57);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(196, 50, 50);
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #614e3b;
+    border-radius: 6px;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #ccc287;
+    padding: 20px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.save{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 20px 0 0 130px;
+    color: #ccc287;
+    background-color: rgb(57,57,57);
+    cursor: pointer;
+}
+
+.save:hover{
+    background-color: rgba(57,57,57,0.7);
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #ccc287;
+    color: rgb(57,57,57);
+    margin: -5px -5px -10px 336px;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: rgb(224, 53, 53);
+    color: #fff;
+}
+
+
+
+@keyframes openModalWindow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.showModal{
+    animation: openModalWindow 2000ms forwards;
+}
+
